@@ -1,16 +1,59 @@
-# React + Vite
+# FlowStack Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern portfolio website built to showcase n8n automation, AI workflow automation, and MERN stack web development projects.
 
-Currently, two official plugins are available:
+## Live Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://flowstack-portfolio.vercel.app
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+FlowStack Portfolio is a personal portfolio website designed to present automation and web development skills in a professional way. It includes sections for services, featured projects, contact information, and project case studies.
 
-## Expanding the ESLint configuration
+This project is also part of my learning journey for understanding how modern web apps are built locally, pushed to GitHub, and deployed online using Vercel.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- Modern dark UI
+- Responsive layout
+- Services section
+- Featured projects section
+- Contact section
+- Reusable React components
+- Data-driven project cards
+- Hosted on Vercel
+
+## Tech Stack
+
+- React
+- Vite
+- Tailwind CSS
+- Git
+- GitHub
+- Vercel
+
+## Project Categories
+
+- n8n Automation
+- AI Automation
+- MERN Stack Development
+- React Websites
+- Business Landing Pages
+
+## Current Status
+
+Frontend MVP completed and deployed.
+
+Future improvements include:
+
+- Project detail pages
+- Contact form functionality
+- Backend API using Node.js and Express
+- MongoDB integration
+- Admin dashboard
+- n8n webhook integration
+- AI lead qualification workflow
+
+## Author
+
+Built by Abdullah Amir.
