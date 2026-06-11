@@ -1,24 +1,22 @@
+import { Routes, Route } from 'react-router-dom'
 import { services, projects } from './data/portfolioData'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Services from './components/Services'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import Home from './pages/Home'
+import ProjectDetail from './pages/ProjectDetail'
+
 function App() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
       <Navbar />
 
-      <Hero />
+      <Routes>
+        <Route
+          path="/"
+          element={<Home services={services} projects={projects} />}
+        />
 
-       <Services services={services} />
-
-      <Projects projects={projects} />
-
-      <Contact />
-
-      <Footer />
+        <Route path="/projects/:slug" element={<ProjectDetail />} />
+      </Routes>
     </main>
   )
 }

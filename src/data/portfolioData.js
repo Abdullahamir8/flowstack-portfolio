@@ -21,6 +21,7 @@ export const services = [
 
 export const projects = [
   {
+    slug: 'ai-lead-qualification-crm-automation',
     title: 'AI Lead Qualification & CRM Automation',
     category: 'n8n Automation',
     label: 'Automation Project',
@@ -32,6 +33,7 @@ export const projects = [
     githubLink: '#',
   },
   {
+    slug: 'full-stack-portfolio-website',
     title: 'Full-Stack Portfolio Website',
     category: 'MERN Stack',
     label: 'MERN Project',
@@ -43,6 +45,7 @@ export const projects = [
     githubLink: '#',
   },
   {
+    slug: 'business-landing-page',
     title: 'Business Landing Page',
     category: 'React Website',
     label: 'Web Project',

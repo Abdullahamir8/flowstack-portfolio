@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Projects({ projects }) {
   return (
     <section id="projects" className="py-24 px-6 border-t border-slate-800">
@@ -60,9 +62,16 @@ function Projects({ projects }) {
                 </div>
 
                 <div className="flex items-center gap-4">
+                  <Link
+                    to={`/projects/${project.slug}`}
+                    className="text-cyan-400 font-medium hover:text-cyan-300"
+                  >
+                    View Details
+                  </Link>
+
                   <a
                     href={project.demoLink}
-                    className="text-cyan-400 font-medium hover:text-cyan-300"
+                    className="text-slate-300 font-medium hover:text-cyan-400"
                   >
                     Live Demo
                   </a>
