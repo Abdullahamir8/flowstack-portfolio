@@ -1,4 +1,42 @@
+import { useState } from 'react'
+
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    service: 'n8n Automation',
+    message: '',
+  })
+
+  const [status, setStatus] = useState('')
+
+  const handleChange = (e) => {
+    const { name, value } = e.target
+
+    setFormData({
+      ...formData,
+      [name]: value,
+    })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    if (!formData.name || !formData.email || !formData.message) {
+      setStatus('Please fill in all required fields.')
+      return
+    }
+
+    setStatus('Message prepared successfully. Backend connection will be added later.')
+
+    setFormData({
+      name: '',
+      email: '',
+      service: 'n8n Automation',
+      message: '',
+    })
+  }
+
   return (
     <section id="contact" className="py-24 px-6 border-t border-slate-800">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
@@ -29,13 +67,19 @@ function Contact() {
           </div>
         </div>
 
-        <form className="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
+        <form
+          onSubmit={handleSubmit}
+          className="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4"
+        >
           <div>
             <label className="block text-sm font-medium mb-2">
               Name
             </label>
             <input
               type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
               placeholder="Your name"
               className="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 outline-none focus:border-cyan-400"
             />
@@ -47,6 +91,9 @@ function Contact() {
             </label>
             <input
               type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
               placeholder="your@email.com"
               className="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 outline-none focus:border-cyan-400"
             />
@@ -56,7 +103,12 @@ function Contact() {
             <label className="block text-sm font-medium mb-2">
               Service Interested In
             </label>
-            <select className="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 outline-none focus:border-cyan-400">
+            <select
+              name="service"
+              value={formData.service}
+              onChange={handleChange}
+              className="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 outline-none focus:border-cyan-400"
+            >
               <option>n8n Automation</option>
               <option>AI Automation</option>
               <option>MERN Web Development</option>
@@ -70,13 +122,22 @@ function Contact() {
             </label>
             <textarea
               rows="5"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
               placeholder="Tell me about your project..."
               className="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 outline-none focus:border-cyan-400 resize-none"
             ></textarea>
           </div>
 
+          {status && (
+            <p className="text-sm text-cyan-400">
+              {status}
+            </p>
+          )}
+
           <button
-            type="button"
+            type="submit"
             className="w-full bg-cyan-400 text-slate-950 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-300 transition"
           >
             Send Message
