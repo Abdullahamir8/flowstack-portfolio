@@ -68,7 +68,8 @@ function ProjectDetail() {
                 Problem
               </h2>
               <p className="text-slate-300">
-                This section will explain the problem this project solves for users or businesses.
+                {project.problem ||
+                  'This section will explain the problem this project solves for users or businesses.'}
               </p>
             </div>
 
@@ -77,7 +78,8 @@ function ProjectDetail() {
                 Solution
               </h2>
               <p className="text-slate-300">
-                This section will explain how the project solves the problem using the selected tools and technologies.
+                {project.solution ||
+                  'This section will explain how the project solves the problem using the selected tools and technologies.'}
               </p>
             </div>
 
@@ -86,7 +88,8 @@ function ProjectDetail() {
                 What I Learned
               </h2>
               <p className="text-slate-300">
-                This section will describe the technical and practical lessons learned while building the project.
+                {project.learned ||
+                  'This section will describe the technical and practical lessons learned while building the project.'}
               </p>
             </div>
 
