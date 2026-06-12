@@ -19,15 +19,31 @@ function Contact() {
     })
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
+  const handleSubmit = async (e) => {
+  e.preventDefault()
 
-    if (!formData.name || !formData.email || !formData.message) {
-      setStatus('Please fill in all required fields.')
+  if (!formData.name || !formData.email || !formData.message) {
+    setStatus('Please fill in all required fields.')
+    return
+  }
+
+  try {
+    const response = await fetch('http://localhost:5000/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+
+    const data = await response.json()
+
+    if (!response.ok) {
+      setStatus(data.message || 'Something went wrong.')
       return
     }
 
-    setStatus('Message prepared successfully. Backend connection will be added later.')
+    setStatus(data.message)
 
     setFormData({
       name: '',
@@ -35,7 +51,11 @@ function Contact() {
       service: 'n8n Automation',
       message: '',
     })
+  } catch (error) {
+    console.error(error)
+    setStatus('Unable to connect to the backend server.')
   }
+}
 
   return (
     <section id="contact" className="py-24 px-6 border-t border-slate-800">
