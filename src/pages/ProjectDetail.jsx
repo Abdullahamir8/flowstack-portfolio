@@ -83,7 +83,26 @@ function ProjectDetail() {
                 )}
               </div>
             </div>
+            {project.databaseImageSrc && (
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8">
+                <h2 className="text-2xl font-bold mb-4">
+                  Backend & Database Proof
+                </h2>
 
+                <p className="text-slate-300 mb-5">
+                  This screenshot shows contact form submissions being stored in
+                  MongoDB Atlas through the backend API.
+                </p>
+
+                <div className="h-64 bg-slate-800 relative overflow-hidden rounded-xl">
+                  <img
+                    src={project.databaseImageSrc}
+                    alt={`${project.title} database proof`}
+                    className="w-full h-full object-contain bg-slate-950"
+                  />
+                </div>
+              </div>
+            )}
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8">
               <h2 className="text-2xl font-bold mb-3">Problem</h2>
               <p className="text-slate-300">

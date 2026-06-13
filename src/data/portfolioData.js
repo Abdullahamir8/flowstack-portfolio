@@ -1,5 +1,5 @@
 import portfolioPreview from '../assets/portfolio-preview.png'
-
+import mongodbContactPreview from '../assets/mongodb-contact-preview.png'
 export const services = [
   {
     title: "n8n Automation",
@@ -48,6 +48,7 @@ export const projects = [
     label: "MERN Project",
     image: "Portfolio Website Preview",
     imageSrc: portfolioPreview,
+    databaseImageSrc: mongodbContactPreview,
     status: "In Progress",
     techStack: ["React", "Tailwind CSS", "React Router", "GitHub", "Vercel"],
     description:
