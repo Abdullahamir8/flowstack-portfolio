@@ -25,6 +25,7 @@ export const projects = [
     title: "AI Lead Qualification & CRM Automation",
     category: "n8n Automation",
     label: "Automation Project",
+    image: "AI Workflow Preview",
     status: "In Progress",
     techStack: ["n8n", "OpenAI", "Google Sheets", "Gmail", "Webhook"],
     description:
@@ -43,6 +44,7 @@ export const projects = [
     title: "Full-Stack Portfolio Website",
     category: "MERN Stack",
     label: "MERN Project",
+    image: "Portfolio Website Preview",
     status: "In Progress",
     techStack: ["React", "Tailwind CSS", "React Router", "GitHub", "Vercel"],
     description:
@@ -61,6 +63,7 @@ export const projects = [
     title: "Business Landing Page",
     category: "React Website",
     label: "Web Project",
+    image: "Landing Page Preview",
     status: "Planned",
     techStack: ["React", "Tailwind CSS", "Responsive Design"],
     description:

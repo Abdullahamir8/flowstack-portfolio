@@ -1,20 +1,18 @@
-import { Link, useParams } from 'react-router-dom'
-import { projects } from '../data/portfolioData'
-import Footer from '../components/Footer'
+import { Link, useParams } from "react-router-dom";
+import { projects } from "../data/portfolioData";
+import Footer from "../components/Footer";
 
 function ProjectDetail() {
-  const { slug } = useParams()
+  const { slug } = useParams();
 
-  const project = projects.find((item) => item.slug === slug)
+  const project = projects.find((item) => item.slug === slug);
 
   if (!project) {
     return (
       <>
         <section className="min-h-screen flex items-center justify-center px-6 pt-24">
           <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">
-              Project not found
-            </h1>
+            <h1 className="text-4xl font-bold mb-4">Project not found</h1>
 
             <Link to="/" className="text-cyan-400 hover:text-cyan-300">
               Back to Home
@@ -24,21 +22,19 @@ function ProjectDetail() {
 
         <Footer />
       </>
-    )
+    );
   }
 
   return (
     <>
-      <section className="pt-32 pb-24 px-6">
+      <section className="pt-40 pb-24 px-6">
         <div className="max-w-4xl mx-auto">
           <Link to="/" className="text-cyan-400 hover:text-cyan-300">
             ← Back to Home
           </Link>
 
           <div className="mt-8">
-            <p className="text-cyan-400 font-medium mb-3">
-              {project.category}
-            </p>
+            <p className="text-cyan-400 font-medium mb-3">{project.category}</p>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               {project.title}
@@ -64,32 +60,40 @@ function ProjectDetail() {
             </p>
 
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8">
-              <h2 className="text-2xl font-bold mb-3">
-                Problem
-              </h2>
+              <div className="h-64 bg-slate-800 flex items-center justify-center px-6 text-center relative overflow-hidden rounded-xl">
+                <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/10 to-slate-950"></div>
+
+                <div className="relative border border-slate-700 bg-slate-950/70 rounded-xl px-6 py-5">
+                  <p className="text-slate-300 text-xl font-semibold">
+                    {project.image}
+                  </p>
+                  <p className="text-slate-500 text-sm mt-2">
+                    Project screenshot placeholder
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8">
+              <h2 className="text-2xl font-bold mb-3">Problem</h2>
               <p className="text-slate-300">
                 {project.problem ||
-                  'This section will explain the problem this project solves for users or businesses.'}
+                  "This section will explain the problem this project solves for users or businesses."}
               </p>
             </div>
 
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8">
-              <h2 className="text-2xl font-bold mb-3">
-                Solution
-              </h2>
+              <h2 className="text-2xl font-bold mb-3">Solution</h2>
               <p className="text-slate-300">
                 {project.solution ||
-                  'This section will explain how the project solves the problem using the selected tools and technologies.'}
+                  "This section will explain how the project solves the problem using the selected tools and technologies."}
               </p>
             </div>
 
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8">
-              <h2 className="text-2xl font-bold mb-3">
-                What I Learned
-              </h2>
+              <h2 className="text-2xl font-bold mb-3">What I Learned</h2>
               <p className="text-slate-300">
                 {project.learned ||
-                  'This section will describe the technical and practical lessons learned while building the project.'}
+                  "This section will describe the technical and practical lessons learned while building the project."}
               </p>
             </div>
 
@@ -114,7 +118,7 @@ function ProjectDetail() {
 
       <Footer />
     </>
-  )
+  );
 }
 
-export default ProjectDetail
+export default ProjectDetail;
