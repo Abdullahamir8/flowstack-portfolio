@@ -23,17 +23,27 @@ function Projects({ projects }) {
               key={project.title}
               className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-cyan-400 transition"
             >
-              <div className="h-40 bg-slate-800 flex items-center justify-center px-6 text-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/10 to-slate-950"></div>
+              <div className="h-40 bg-slate-800 relative overflow-hidden">
+                {project.imageSrc ? (
+                  <img
+                    src={project.imageSrc}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="h-full flex items-center justify-center px-6 text-center relative">
+                    <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/10 to-slate-950"></div>
 
-                <div className="relative border border-slate-700 bg-slate-950/70 rounded-xl px-5 py-4">
-                  <p className="text-slate-300 font-semibold">
-                    {project.image}
-                  </p>
-                  <p className="text-slate-500 text-xs mt-2">
-                    Screenshot placeholder
-                  </p>
-                </div>
+                    <div className="relative border border-slate-700 bg-slate-950/70 rounded-xl px-5 py-4">
+                      <p className="text-slate-300 font-semibold">
+                        {project.image}
+                      </p>
+                      <p className="text-slate-500 text-xs mt-2">
+                        Screenshot placeholder
+                      </p>
+                    </div>
+                  </div>
+                )}
               </div>
 
               <div className="p-6">

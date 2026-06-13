@@ -1,3 +1,5 @@
+import portfolioPreview from '../assets/portfolio-preview.png'
+
 export const services = [
   {
     title: "n8n Automation",
@@ -45,6 +47,7 @@ export const projects = [
     category: "MERN Stack",
     label: "MERN Project",
     image: "Portfolio Website Preview",
+    imageSrc: portfolioPreview,
     status: "In Progress",
     techStack: ["React", "Tailwind CSS", "React Router", "GitHub", "Vercel"],
     description:

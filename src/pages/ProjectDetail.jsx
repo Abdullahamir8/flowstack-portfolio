@@ -60,19 +60,30 @@ function ProjectDetail() {
             </p>
 
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8">
-              <div className="h-64 bg-slate-800 flex items-center justify-center px-6 text-center relative overflow-hidden rounded-xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/10 to-slate-950"></div>
+              <div className="h-64 bg-slate-800 relative overflow-hidden rounded-xl">
+                {project.imageSrc ? (
+                  <img
+                    src={project.imageSrc}
+                    alt={project.title}
+                    className="w-full h-full object-contain bg-slate-950"
+                  />
+                ) : (
+                  <div className="h-full flex items-center justify-center px-6 text-center relative">
+                    <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/10 to-slate-950"></div>
 
-                <div className="relative border border-slate-700 bg-slate-950/70 rounded-xl px-6 py-5">
-                  <p className="text-slate-300 text-xl font-semibold">
-                    {project.image}
-                  </p>
-                  <p className="text-slate-500 text-sm mt-2">
-                    Project screenshot placeholder
-                  </p>
-                </div>
+                    <div className="relative border border-slate-700 bg-slate-950/70 rounded-xl px-6 py-5">
+                      <p className="text-slate-300 text-xl font-semibold">
+                        {project.image}
+                      </p>
+                      <p className="text-slate-500 text-sm mt-2">
+                        Project screenshot placeholder
+                      </p>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
+
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8">
               <h2 className="text-2xl font-bold mb-3">Problem</h2>
               <p className="text-slate-300">
@@ -100,6 +111,8 @@ function ProjectDetail() {
             <div className="flex flex-wrap gap-4">
               <a
                 href={project.demoLink}
+                target="_blank"
+                rel="noreferrer"
                 className="bg-cyan-400 text-slate-950 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-300 transition"
               >
                 Live Demo
@@ -107,6 +120,8 @@ function ProjectDetail() {
 
               <a
                 href={project.githubLink}
+                target="_blank"
+                rel="noreferrer"
                 className="border border-slate-600 px-6 py-3 rounded-lg font-semibold hover:border-cyan-400 hover:text-cyan-400 transition"
               >
                 GitHub
