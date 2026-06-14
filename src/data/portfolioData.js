@@ -61,16 +61,19 @@ export const projects = [
     category: "n8n Automation",
     label: "Automation Project",
     image: "AI Workflow Preview",
-    status: "In Progress",
+    status: "In Progress / Prototype",
     techStack: ["n8n", "OpenAI", "Google Sheets", "Gmail", "Webhook"],
     description:
-      "An n8n workflow that captures leads, analyzes them with AI, stores them in a CRM sheet, and sends email notifications.",
+      "An AI automation prototype designed to capture leads, qualify them using OpenAI, store important details in Google Sheets or a CRM, and send smart follow-up emails. This project represents a real business automation use case for service providers, agencies, and small businesses.",
+
     problem:
-      "Many businesses receive leads from forms, social media, or ads, but they waste time manually checking which leads are serious and which ones are low quality.",
+      "Many businesses receive leads from forms, messages, or ads, but they waste time manually checking whether each lead is serious, relevant, or ready to buy. Without automation, follow-ups can be slow, inconsistent, and easy to forget.",
+
     solution:
-      "This automation captures lead data through a webhook, uses AI to analyze the lead message, assigns a quality score, stores the lead in Google Sheets, and sends an email notification for follow-up.",
+      "The planned workflow captures lead details through a form or webhook, sends the lead information to OpenAI for qualification, assigns a lead score or category, stores the result in Google Sheets or a CRM, and prepares an automated follow-up message based on the lead quality.",
+
     learned:
-      "This project helped me understand how n8n webhooks, AI models, Google Sheets, and Gmail can work together to create a practical business automation workflow.",
+      "This project is helping me understand how AI automation can connect forms, webhooks, OpenAI, Google Sheets, email tools, and CRM systems into one workflow. It also shows how AI can be used practically for lead scoring, smart replies, and business process automation.",
     demoLink: "#",
     githubLink: "#",
   },
