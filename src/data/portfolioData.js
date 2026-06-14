@@ -62,7 +62,15 @@ export const projects = [
     label: "Automation Project",
     image: "AI Workflow Preview",
     status: "In Progress / Prototype",
-    techStack: ["n8n", "OpenAI", "Google Sheets", "Gmail", "Webhook"],
+    techStack: [
+      "n8n",
+      "OpenAI",
+      "Webhooks",
+      "Google Sheets",
+      "Gmail",
+      "CRM Automation",
+      "Lead Scoring",
+    ],
     description:
       "An AI automation prototype designed to capture leads, qualify them using OpenAI, store important details in Google Sheets or a CRM, and send smart follow-up emails. This project represents a real business automation use case for service providers, agencies, and small businesses.",
 
