@@ -50,7 +50,16 @@ export const projects = [
     imageSrc: portfolioPreview,
     databaseImageSrc: mongodbContactPreview,
     status: "In Progress",
-    techStack: ["React", "Tailwind CSS", "React Router", "GitHub", "Vercel"],
+    techStack: [
+      "React",
+      "Tailwind CSS",
+      "React Router",
+      "Vercel API",
+      "MongoDB Atlas",
+      "Mongoose",
+      "GitHub",
+      "Vercel",
+    ],
     description:
       "A full-stack portfolio website built with React, Tailwind CSS, React Router, Vercel serverless API routes, and MongoDB Atlas. It showcases services, projects, project detail pages, real screenshots, and a working contact form that stores client messages in a database.",
 
