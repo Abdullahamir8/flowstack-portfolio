@@ -1,5 +1,5 @@
-import portfolioPreview from '../assets/portfolio-preview.png'
-import mongodbContactPreview from '../assets/mongodb-contact-preview.png'
+import portfolioPreview from "../assets/portfolio-preview.png";
+import mongodbContactPreview from "../assets/mongodb-contact-preview.png";
 export const services = [
   {
     title: "n8n Automation",
@@ -52,13 +52,16 @@ export const projects = [
     status: "In Progress",
     techStack: ["React", "Tailwind CSS", "React Router", "GitHub", "Vercel"],
     description:
-      "A modern portfolio website built to showcase n8n automation, AI workflow automation, and MERN stack web development projects.",
+      "A full-stack portfolio website built with React, Tailwind CSS, React Router, Vercel serverless API routes, and MongoDB Atlas. It showcases services, projects, project detail pages, real screenshots, and a working contact form that stores client messages in a database.",
+
     problem:
-      "Many beginners create separate small projects but do not have one professional place to present their work, services, live demos, GitHub links, and case studies.",
+      "A simple portfolio website can show skills, but it often does not prove real full-stack ability. I needed a professional portfolio that could present projects clearly, collect client inquiries, and demonstrate that frontend, backend, database, deployment, and GitHub workflow are all working together.",
+
     solution:
-      "This portfolio website provides a central place to showcase automation and web development projects. It includes reusable React components, data-driven project cards, project detail pages, GitHub version control, and live deployment on Vercel.",
+      "I built a responsive React and Tailwind CSS portfolio with reusable components, project detail pages using React Router, and a live contact form connected to a Vercel serverless API route. The API validates submissions and stores contact messages in MongoDB Atlas, proving that the project has real backend and database functionality.",
+
     learned:
-      "This project helped me understand React component structure, Tailwind CSS styling, React Router, Git/GitHub workflow, Vercel deployment, and how local development differs from hosted deployment.",
+      "I learned how to structure a React portfolio project, use reusable data-driven components, create dynamic project pages with React Router, connect a frontend form to an API, store submissions in MongoDB Atlas, manage environment variables, deploy on Vercel, and troubleshoot production issues such as database network access.",
     demoLink: "https://flowstack-portfolio.vercel.app",
     githubLink: "https://github.com/Abdullahamir8/flowstack-portfolio",
   },
