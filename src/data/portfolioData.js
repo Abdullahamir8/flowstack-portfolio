@@ -49,7 +49,7 @@ export const projects = [
     image: "Portfolio Website Preview",
     imageSrc: portfolioPreview,
     databaseImageSrc: mongodbContactPreview,
-    status: "In Progress",
+    status: "Live / Completed",
     techStack: [
       "React",
       "Tailwind CSS",
