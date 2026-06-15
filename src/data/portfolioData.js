@@ -80,7 +80,7 @@ export const projects = [
 
     learned:
       "This project helped me understand how to create an n8n workflow through ChatGPT, receive lead data using a webhook, format incoming data with an Edit Fields node, return a response using Respond to Webhook, and test the workflow successfully with sample lead data.",
-    demoLink: "#",
+    demoLink: "https://abdullahamir8.app.n8n.cloud/workflow/dhUJKGT9rLalFLU4",
     githubLink: "#",
   },
   {
