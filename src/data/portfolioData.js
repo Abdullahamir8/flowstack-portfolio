@@ -1,5 +1,7 @@
 import portfolioPreview from "../assets/portfolio-preview.png";
 import mongodbContactPreview from "../assets/mongodb-contact-preview.png";
+import aiLeadWorkflowPreview from "../assets/ai-lead-workflow-preview.png";
+
 export const services = [
   {
     title: "MERN Web Development",
@@ -43,13 +45,10 @@ export const projects = [
     ],
     description:
       "A full-stack portfolio website built with React, Tailwind CSS, React Router, Vercel serverless API routes, and MongoDB Atlas. It showcases services, projects, project detail pages, real screenshots, and a working contact form that stores client messages in a database.",
-
     problem:
       "A simple portfolio website can show skills, but it often does not prove real full-stack ability. I needed a professional portfolio that could present projects clearly, collect client inquiries, and demonstrate that frontend, backend, database, deployment, and GitHub workflow are all working together.",
-
     solution:
       "I built a responsive React and Tailwind CSS portfolio with reusable components, project detail pages using React Router, and a live contact form connected to a Vercel serverless API route. The API validates submissions and stores contact messages in MongoDB Atlas, proving that the project has real backend and database functionality.",
-
     learned:
       "I learned how to structure a React portfolio project, use reusable data-driven components, create dynamic project pages with React Router, connect a frontend form to an API, store submissions in MongoDB Atlas, manage environment variables, deploy on Vercel, and troubleshoot production issues such as database network access.",
     demoLink: "https://flowstack-portfolio.vercel.app",
@@ -61,6 +60,7 @@ export const projects = [
     category: "n8n Automation",
     label: "Automation Project",
     image: "AI Workflow Preview",
+    imageSrc: aiLeadWorkflowPreview,
     status: "In Progress / Prototype",
     techStack: [
       "n8n",
@@ -73,15 +73,13 @@ export const projects = [
     ],
     description:
       "An AI automation prototype designed to capture leads, qualify them using OpenAI, store important details in Google Sheets or a CRM, and send smart follow-up emails. This project represents a real business automation use case for service providers, agencies, and small businesses.",
-
     problem:
       "Many businesses receive leads from forms, messages, or ads, but they waste time manually checking whether each lead is serious, relevant, or ready to buy. Without automation, follow-ups can be slow, inconsistent, and easy to forget.",
-
     solution:
-      "The planned workflow captures lead details through a form or webhook, sends the lead information to OpenAI for qualification, assigns a lead score or category, stores the result in Google Sheets or a CRM, and prepares an automated follow-up message based on the lead quality.",
+      "I created and tested an initial n8n webhook workflow that receives lead data, formats the lead information, and returns a success response. The next planned steps are to connect OpenAI for lead qualification, store qualified leads in Google Sheets or a CRM, and generate automated follow-up messages based on lead quality.",
 
     learned:
-      "This project is helping me understand how AI automation can connect forms, webhooks, OpenAI, Google Sheets, email tools, and CRM systems into one workflow. It also shows how AI can be used practically for lead scoring, smart replies, and business process automation.",
+      "This project helped me understand how to create an n8n workflow through ChatGPT, receive lead data using a webhook, format incoming data with an Edit Fields node, return a response using Respond to Webhook, and test the workflow successfully with sample lead data.",
     demoLink: "#",
     githubLink: "#",
   },
