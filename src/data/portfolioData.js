@@ -61,7 +61,7 @@ export const projects = [
     label: "Automation Project",
     image: "AI Workflow Preview",
     imageSrc: aiLeadWorkflowPreview,
-    status: "In Progress / Prototype",
+    status: "Prototype Tested",
     techStack: [
       "n8n",
       "OpenAI",
