@@ -82,17 +82,23 @@ function Projects({ projects }) {
 
                   <a
                     href={project.demoLink}
+                    target="_blank"
+                    rel="noreferrer"
                     className="text-slate-300 font-medium hover:text-cyan-400"
                   >
                     Live Demo
                   </a>
 
-                  <a
-                    href={project.githubLink}
-                    className="text-slate-300 font-medium hover:text-cyan-400"
-                  >
-                    GitHub
-                  </a>
+                  {project.githubLink && (
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-slate-300 font-medium hover:text-cyan-400"
+                    >
+                      GitHub
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

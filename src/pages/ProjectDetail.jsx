@@ -137,14 +137,16 @@ function ProjectDetail() {
                 Live Demo
               </a>
 
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noreferrer"
-                className="border border-slate-600 px-6 py-3 rounded-lg font-semibold hover:border-cyan-400 hover:text-cyan-400 transition"
-              >
-                GitHub
-              </a>
+              {project.githubLink && (
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="border border-slate-600 px-6 py-3 rounded-lg font-semibold hover:border-cyan-400 hover:text-cyan-400 transition"
+                >
+                  GitHub
+                </a>
+              )}
             </div>
           </div>
         </div>
