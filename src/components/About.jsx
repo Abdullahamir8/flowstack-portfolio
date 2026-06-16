@@ -7,70 +7,82 @@ function About() {
     "Tailwind CSS",
     "REST APIs",
     "n8n Automation",
-    "OpenAI Integration",
+    "OpenAI API",
+  ];
+
+  const stats = [
+    "2+ Full Stack Projects",
+    "Live Production Deployment",
+    "AI + Automation Workflows",
+    "Backend API Integration",
   ];
 
   return (
     <section id="about" className="py-24 px-6 border-t border-slate-800">
       <div className="max-w-6xl mx-auto">
-        <div className="mb-12">
+        
+        {/* About Content */}
+        <div className="mb-14">
           <p className="text-cyan-400 font-medium mb-3">About Me</p>
 
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Building software and automation systems that solve real business
-            problems.
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 max-w-4xl leading-tight">
+            Building software and automation solutions that help businesses work
+            smarter and scale faster.
           </h2>
 
-          <div className="max-w-4xl space-y-5 text-slate-300 text-lg leading-8">
+          <div className="max-w-4xl space-y-6 text-slate-300 text-lg leading-8">
             <p>
-              I’m <span className="text-white font-semibold">Abdullah Amir</span>,
-              a developer focused on building modern full-stack web applications
-              and intelligent workflow automation systems.
-            </p>
-
-            <p>
-              My core expertise is in{" "}
-              <span className="text-cyan-400">
-                MERN Stack Development
-              </span>{" "}
-              where I build responsive frontend interfaces, backend APIs,
-              database-driven applications, admin dashboards, and scalable web
-              solutions using modern JavaScript technologies.
-            </p>
-
-            <p>
-              I also specialize in{" "}
-              <span className="text-cyan-400">
-                workflow automation using n8n and AI integration
+              I’m{" "}
+              <span className="text-white font-semibold">
+                Abdullah Amir
               </span>
-              , helping businesses automate repetitive tasks such as lead
-              capture, CRM updates, email automation, API connections, data
-              processing, and intelligent AI-powered workflows.
+              , a developer focused on building modern web applications and
+              intelligent automation systems for real business use cases.
             </p>
 
             <p>
-              My focus is not simply writing code — I build systems that save
-              time, reduce manual work, improve efficiency, and solve practical
-              business problems through software engineering and automation.
+              I specialize in{" "}
+              <span className="text-cyan-400">
+                MERN stack development, backend APIs, database architecture,
+                workflow automation, and AI-powered integrations
+              </span>{" "}
+              using modern technologies and scalable engineering practices.
             </p>
 
             <p>
-              I continuously work on real-world projects to strengthen my
-              expertise in full-stack development, backend architecture,
-              automation engineering, and AI-powered business solutions.
+              My focus is building systems that automate repetitive work,
+              improve operational efficiency, and solve practical business
+              problems through clean software development and automation.
             </p>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-4 mt-12">
-          {skills.map((skill) => (
+        {/* Stats Section */}
+        <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-4 mb-14">
+          {stats.map((stat) => (
             <div
-              key={skill}
-              className="bg-slate-900 border border-slate-800 rounded-xl px-5 py-4 text-center hover:border-cyan-400 transition"
+              key={stat}
+              className="bg-slate-900 border border-slate-800 rounded-xl p-5 text-center hover:border-cyan-400 transition"
             >
-              <p className="text-slate-200 font-medium">{skill}</p>
+              <p className="text-white font-medium">{stat}</p>
             </div>
           ))}
+        </div>
+
+        {/* Skills Section */}
+        <div>
+          <p className="text-cyan-400 font-medium mb-5">Core Technologies</p>
+
+          <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-4">
+            {skills.map((skill) => (
+              <div
+                key={skill}
+                className="bg-slate-900 border border-slate-800 rounded-xl px-5 py-4 text-center hover:border-cyan-400 transition"
+              >
+                <p className="text-slate-200 font-medium">{skill}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
