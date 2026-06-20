@@ -1,8 +1,8 @@
-import { Routes, Route } from 'react-router-dom'
-import { services, projects } from './data/portfolioData'
-import Navbar from './components/Navbar'
-import Home from './pages/Home'
-import ProjectDetail from './pages/ProjectDetail'
+import { Routes, Route } from "react-router-dom";
+import { services, projects } from "./data/portfolioData";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import ProjectDetail from "./pages/ProjectDetail";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Route path="/projects/:slug" element={<ProjectDetail />} />
       </Routes>
     </main>
-  )
+  );
 }
 
-export default App
+export default App;

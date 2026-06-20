@@ -4,7 +4,6 @@ import Footer from "../components/Footer";
 
 function ProjectDetail() {
   const { slug } = useParams();
-
   const project = projects.find((item) => item.slug === slug);
 
   if (!project) {
@@ -68,21 +67,13 @@ function ProjectDetail() {
                     className="w-full h-full object-contain bg-slate-950"
                   />
                 ) : (
-                  <div className="h-full flex items-center justify-center px-6 text-center relative">
-                    <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/10 to-slate-950"></div>
-
-                    <div className="relative border border-slate-700 bg-slate-950/70 rounded-xl px-6 py-5">
-                      <p className="text-slate-300 text-xl font-semibold">
-                        {project.image}
-                      </p>
-                      <p className="text-slate-500 text-sm mt-2">
-                        Project screenshot placeholder
-                      </p>
-                    </div>
+                  <div className="h-full flex items-center justify-center text-slate-400">
+                    Project Preview
                   </div>
                 )}
               </div>
             </div>
+
             {project.databaseImageSrc && (
               <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8">
                 <h2 className="text-2xl font-bold mb-4">
@@ -90,41 +81,32 @@ function ProjectDetail() {
                 </h2>
 
                 <p className="text-slate-300 mb-5">
-                  This screenshot shows contact form submissions being stored in
-                  MongoDB Atlas through the backend API.
+                  This demonstrates successful backend API integration and MongoDB database persistence in production.
                 </p>
 
-                <div className="h-64 bg-slate-800 relative overflow-hidden rounded-xl">
+                <div className="h-64 bg-slate-800 rounded-xl overflow-hidden">
                   <img
                     src={project.databaseImageSrc}
-                    alt={`${project.title} database proof`}
+                    alt="database proof"
                     className="w-full h-full object-contain bg-slate-950"
                   />
                 </div>
               </div>
             )}
+
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8">
               <h2 className="text-2xl font-bold mb-3">Problem</h2>
-              <p className="text-slate-300">
-                {project.problem ||
-                  "This section will explain the problem this project solves for users or businesses."}
-              </p>
+              <p className="text-slate-300">{project.problem}</p>
             </div>
 
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8">
               <h2 className="text-2xl font-bold mb-3">Solution</h2>
-              <p className="text-slate-300">
-                {project.solution ||
-                  "This section will explain how the project solves the problem using the selected tools and technologies."}
-              </p>
+              <p className="text-slate-300">{project.solution}</p>
             </div>
 
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8">
               <h2 className="text-2xl font-bold mb-3">What I Learned</h2>
-              <p className="text-slate-300">
-                {project.learned ||
-                  "This section will describe the technical and practical lessons learned while building the project."}
-              </p>
+              <p className="text-slate-300">{project.learned}</p>
             </div>
 
             <div className="flex flex-wrap gap-4">

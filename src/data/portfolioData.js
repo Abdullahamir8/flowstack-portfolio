@@ -1,25 +1,25 @@
 import portfolioPreview from "../assets/portfolio-preview.png";
 import mongodbContactPreview from "../assets/mongodb-contact-preview.png";
-import aiLeadWorkflowPreview from "../assets/ai-lead-workflow-preview.png";
+// import aiLeadWorkflowPreview from "../assets/ai-lead-workflow-preview.png"; // keep for future automation comeback
 
 export const services = [
   {
-    title: "MERN Web Development",
+    title: "Frontend Development",
     description:
-      "Modern websites and full-stack web apps using React, Node.js, Express, MongoDB, admin dashboards, and contact forms.",
-    tools: "React · Node · MongoDB",
+      "Building responsive modern user interfaces using React.js, Tailwind CSS, reusable components, routing, and clean frontend engineering practices.",
+    tools: "React · Tailwind · JavaScript",
   },
   {
-    title: "n8n Automation",
+    title: "Backend Development",
     description:
-      "Custom n8n workflows for lead capture, email automation, CRM updates, Google Sheets, webhooks, and API integrations.",
-    tools: "n8n · Webhooks · APIs",
+      "Building scalable backend APIs, server-side logic, request handling, validation, and application architecture using Node.js and Express.js.",
+    tools: "Node.js · Express.js · REST APIs",
   },
   {
-    title: "AI Automation",
+    title: "Database Integration",
     description:
-      "AI-powered workflows using ChatGPT/OpenAI for lead qualification, smart replies, summarization, and business process automation.",
-    tools: "OpenAI · AI Agents · n8n",
+      "Designing database-driven applications using MongoDB, Mongoose models, CRUD operations, schema design, and persistent data management.",
+    tools: "MongoDB · Mongoose · CRUD",
   },
 ];
 
@@ -44,61 +44,42 @@ export const projects = [
       "Vercel",
     ],
     description:
-      "A full-stack portfolio website built with React, Tailwind CSS, React Router, Vercel serverless API routes, and MongoDB Atlas. It showcases services, projects, project detail pages, real screenshots, and a working contact form that stores client messages in a database.",
+      "A full-stack portfolio website built using React, Tailwind CSS, React Router, backend API routes, and MongoDB Atlas. It demonstrates frontend architecture, backend integration, database storage, and deployment workflow.",
     problem:
-      "A simple portfolio website can show skills, but it often does not prove real full-stack ability. I needed a professional portfolio that could present projects clearly, collect client inquiries, and demonstrate that frontend, backend, database, deployment, and GitHub workflow are all working together.",
+      "A basic portfolio website often shows frontend skills only. I wanted to build a portfolio that proves real full-stack development ability by integrating frontend, backend, database, deployment, and production-ready architecture.",
     solution:
-      "I built a responsive React and Tailwind CSS portfolio with reusable components, project detail pages using React Router, and a live contact form connected to a Vercel serverless API route. The API validates submissions and stores contact messages in MongoDB Atlas, proving that the project has real backend and database functionality.",
+      "I built a responsive React portfolio with reusable components, dynamic project pages using React Router, a contact form connected to backend API routes, and MongoDB Atlas integration for persistent message storage.",
     learned:
-      "I learned how to structure a React portfolio project, use reusable data-driven components, create dynamic project pages with React Router, connect a frontend form to an API, store submissions in MongoDB Atlas, manage environment variables, deploy on Vercel, and troubleshoot production issues such as database network access.",
+      "I learned React component architecture, reusable UI design, routing with React Router, API integration, backend request handling, MongoDB data storage, environment variables management, deployment, and production debugging.",
     demoLink: "https://flowstack-portfolio.vercel.app",
     githubLink: "https://github.com/Abdullahamir8/flowstack-portfolio",
   },
+
+  // KEEP THIS FOR FUTURE AUTOMATION PHASE
+  /*
   {
     slug: "ai-lead-qualification-crm-automation",
     title: "AI Lead Qualification & CRM Automation",
-    category: "n8n Automation",
-    label: "Automation Project",
-    image: "AI Workflow Preview",
-    imageSrc: aiLeadWorkflowPreview,
-    status: "Prototype Tested",
-    techStack: [
-      "n8n",
-      "OpenAI",
-      "Webhooks",
-      "Google Sheets",
-      "Gmail",
-      "CRM Automation",
-      "Lead Scoring",
-    ],
-    description:
-      "An AI automation prototype designed to capture leads, qualify them using OpenAI, store important details in Google Sheets or a CRM, and send smart follow-up emails. This project represents a real business automation use case for service providers, agencies, and small businesses.",
-    problem:
-      "Many businesses receive leads from forms, messages, or ads, but they waste time manually checking whether each lead is serious, relevant, or ready to buy. Without automation, follow-ups can be slow, inconsistent, and easy to forget.",
-    solution:
-      "I created and tested an initial n8n webhook workflow that receives lead data, formats the lead information, and returns a success response. The next planned steps are to connect OpenAI for lead qualification, store qualified leads in Google Sheets or a CRM, and generate automated follow-up messages based on lead quality.",
-
-    learned:
-      "This project helped me understand how to create an n8n workflow through ChatGPT, receive lead data using a webhook, format incoming data with an Edit Fields node, return a response using Respond to Webhook, and test the workflow successfully with sample lead data.",
-    demoLink: "https://abdullahamir8.app.n8n.cloud/workflow/dhUJKGT9rLalFLU4",
-    githubLink: "",
+    ...
   },
+  */
+
   {
     slug: "business-landing-page",
     title: "Business Landing Page",
-    category: "React Website",
-    label: "Web Project",
+    category: "Frontend Development",
+    label: "React Project",
     image: "Landing Page Preview",
     status: "Planned",
     techStack: ["React", "Tailwind CSS", "Responsive Design"],
     description:
-      "A clean and responsive landing page for a business service with call-to-action sections and contact form design.",
+      "A modern responsive landing page focused on business presentation, clean UI design, responsive layouts, and conversion-focused frontend development.",
     problem:
-      "Many small businesses need a simple online presence, but they often do not have a clean landing page that clearly explains their service and guides visitors to take action.",
+      "Many small businesses need a strong online presence but often lack professional landing pages that clearly communicate services and guide users toward taking action.",
     solution:
-      "This planned landing page will include a clear hero section, service highlights, benefits, testimonials, call-to-action buttons, and a contact section using a responsive React and Tailwind CSS layout.",
+      "This project focuses on building a modern responsive landing page with clear content structure, strong call-to-actions, service sections, testimonials, and conversion-oriented user experience.",
     learned:
-      "This project will help improve my frontend design skills, responsive layout planning, landing page structure, and conversion-focused UI design.",
+      "This project will strengthen my frontend engineering skills, responsive design principles, component structuring, layout planning, and UI design focused on user conversion.",
     demoLink: "#",
     githubLink: "#",
   },

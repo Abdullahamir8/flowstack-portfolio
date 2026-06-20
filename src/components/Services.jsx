@@ -2,18 +2,19 @@ function Services({ services }) {
   return (
     <section id="services" className="py-24 px-6 border-t border-slate-800">
       <div className="max-w-6xl mx-auto">
+
         <div className="mb-12">
           <p className="text-cyan-400 font-medium mb-3">
             Services
           </p>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            What I can build for clients
+            What I build
           </h2>
 
           <p className="text-slate-300 max-w-2xl">
-            I focus on practical automation and web development solutions that help businesses
-            save time, manage leads, and improve their online presence.
+            I focus on modern full stack web development using MERN technologies
+            and scalable software engineering practices.
           </p>
         </div>
 
@@ -37,9 +38,10 @@ function Services({ services }) {
             </div>
           ))}
         </div>
+
       </div>
     </section>
-  )
+  );
 }
 
-export default Services
+export default Services;

@@ -2,17 +2,18 @@ function Hero() {
   return (
     <section id="home" className="min-h-screen flex items-center px-6 pt-20">
       <div className="max-w-5xl mx-auto">
+
         <p className="text-cyan-400 font-medium mb-4">
-          n8n Automation & MERN Stack Developer
+          Full Stack MERN Developer
         </p>
 
         <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-          I build smart automations and modern web applications.
+          I build modern scalable web applications from frontend to backend.
         </h1>
 
         <p className="text-slate-300 text-lg md:text-xl max-w-2xl mb-8">
-          I create AI-powered n8n workflows, CRM automations, API integrations,
-          and full-stack MERN web apps that help businesses save time and work smarter.
+          I develop full stack web applications using React, Node.js, Express,
+          MongoDB, REST APIs, and modern JavaScript technologies for real-world business solutions.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
@@ -30,9 +31,10 @@ function Hero() {
             Contact Me
           </a>
         </div>
+
       </div>
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

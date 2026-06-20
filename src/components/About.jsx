@@ -6,28 +6,26 @@ function About() {
     "MongoDB",
     "Tailwind CSS",
     "REST APIs",
-    "n8n Automation",
-    "OpenAI API",
+    "JavaScript ES6+",
+    "Git & GitHub",
   ];
 
   const stats = [
-    "2+ Full Stack Projects",
+    "2+ MERN Projects",
     "Live Production Deployment",
-    "AI + Automation Workflows",
     "Backend API Integration",
+    "Database Driven Applications",
   ];
 
   return (
     <section id="about" className="py-24 px-6 border-t border-slate-800">
       <div className="max-w-6xl mx-auto">
-        
-        {/* About Content */}
+
         <div className="mb-14">
           <p className="text-cyan-400 font-medium mb-3">About Me</p>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-8 max-w-4xl leading-tight">
-            Building software and automation solutions that help businesses work
-            smarter and scale faster.
+            Building full stack web applications with modern scalable MERN technologies.
           </h2>
 
           <div className="max-w-4xl space-y-6 text-slate-300 text-lg leading-8">
@@ -36,28 +34,26 @@ function About() {
               <span className="text-white font-semibold">
                 Abdullah Amir
               </span>
-              , a developer focused on building modern web applications and
-              intelligent automation systems for real business use cases.
+              , a developer focused on building modern full stack web applications
+              using JavaScript technologies.
             </p>
 
             <p>
               I specialize in{" "}
               <span className="text-cyan-400">
-                MERN stack development, backend APIs, database architecture,
-                workflow automation, and AI-powered integrations
-              </span>{" "}
-              using modern technologies and scalable engineering practices.
+                React.js, Node.js, Express.js, MongoDB, backend APIs,
+                database architecture, and scalable web application development.
+              </span>
             </p>
 
             <p>
-              My focus is building systems that automate repetitive work,
-              improve operational efficiency, and solve practical business
-              problems through clean software development and automation.
+              My focus is writing clean code, building production-ready applications,
+              solving real business problems, and continuously improving my software
+              engineering skills through practical project development.
             </p>
           </div>
         </div>
 
-        {/* Stats Section */}
         <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-4 mb-14">
           {stats.map((stat) => (
             <div
@@ -69,7 +65,6 @@ function About() {
           ))}
         </div>
 
-        {/* Skills Section */}
         <div>
           <p className="text-cyan-400 font-medium mb-5">Core Technologies</p>
 
@@ -84,6 +79,7 @@ function About() {
             ))}
           </div>
         </div>
+
       </div>
     </section>
   );
